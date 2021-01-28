@@ -1,0 +1,916 @@
+{
+	"info": {
+		"_postman_id": "45ece48b-6469-4c27-b958-80ff115cd535",
+		"name": "kelola",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "didin",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "didin@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "didin1234",
+							"type": "text"
+						},
+						{
+							"key": "confirmation",
+							"value": "didin1234",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"register"
+					],
+					"query": [
+						{
+							"key": "confirmation",
+							"value": "maulana",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept": true
+				}
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "qmmwkcrcAvLXLgSTPXNGVxfc3a60JmPRwBFcbZTahfmxNfbWzmQB0hL9TeKd",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email",
+							"value": "didin@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "maulanaAksan",
+							"type": "text"
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"login"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "insert categori",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiMzUxZTk1OGQwNGMxYWNmMjc5ODJhNzJlYjU5YzQxYjEzNTUyZWU4NGU3ZWI1NGFiNjE0N2RlNzdhNTJlODdiMTRiM2EyMTcxOTRkODQwNWQiLCJpYXQiOjE2MTE2NDgwNTksIm5iZiI6MTYxMTY0ODA1OSwiZXhwIjoxNjQzMTg0MDU5LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.uh4HcSkpDnmpXsBagC0V2HguHtJC7cbODRyPNwRYGRQYMT6pI6Rdocp5TnUUA9IR4TCP6YMLlA5tTR27KvmZt-VdtVSt23-B4ha0NVS2zApUfPBxD739--LMIyvohyVovxhM8uDoDTq8z_3_rerhImLolrLsUnU_xosr7QI6alrwjPKjhrsGI9B8ZCSSpmamzeaW-rSvpsBSML0MijDqawAbb4-jRPDjIuxyoiSS-D04QhOZNpWxhTbwYHR-1xsrCj9dz4uAOUTAUzJeLf7W9l6_tMlos8zgksFrrHUhUA0B6ioZvFI1EX-cKLMZZhqcjSnPZ-Qp_sVgFA8YwwlJeAMk3dcPtMjDJHdkiYVvqgYE2MEAMmpkefeUrZ5Kng_JJ1mAeESN78z0zmKCAbLri7LBf0nymfMKH4euwyYu3VTJaSEaN4BYdfYOyD8EZ340KcPjXN6Djgbud_4VV_TdFp0trxcyTzFEeoXmC1KoOpMURASDk6XqveDcQ7QhMx4F_j1-hHKKj5--7V-lSZmj2XPQ8HhOCbVKiccC0CpL_ZQRO93IGqPXBfEltloQIttuH5QCFjktyp6M4dNYSzcPw-GshkqGxNmQHrqGtWuBII5HkzsWW4wpaW9i8ak89flDBjOjP4PxWrVYem8mMUHlpW1-qged5KiLhw3cDp_Q3Hk",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "bahasa",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "maulana",
+							"type": "text",
+							"disabled": true
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/categori",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"categori"
+					],
+					"query": [
+						{
+							"key": "emai",
+							"value": "maulana",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "list categori all",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "OtWi5hzTHAR5Sxy6netxkKqxZQqNjLQg0SekdTYspPravjVQdWLQqh0pG1fY",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Metode Penelitian Teknik Informatika",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "password",
+							"value": "maulana",
+							"type": "text",
+							"disabled": true
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/categori",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"categori"
+					],
+					"query": [
+						{
+							"key": "emai",
+							"value": "maulana",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "edit categori",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "OtWi5hzTHAR5Sxy6netxkKqxZQqNjLQg0SekdTYspPravjVQdWLQqh0pG1fY",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Komputer",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "maulana",
+							"type": "text",
+							"disabled": true
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/categori/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"categori",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete categori",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "OtWi5hzTHAR5Sxy6netxkKqxZQqNjLQg0SekdTYspPravjVQdWLQqh0pG1fY",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "id",
+							"value": "1",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "password",
+							"value": "maulana",
+							"type": "text",
+							"disabled": true
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/categori/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"categori",
+						"1"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "list Rack all",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiMzUxZTk1OGQwNGMxYWNmMjc5ODJhNzJlYjU5YzQxYjEzNTUyZWU4NGU3ZWI1NGFiNjE0N2RlNzdhNTJlODdiMTRiM2EyMTcxOTRkODQwNWQiLCJpYXQiOjE2MTE2NDgwNTksIm5iZiI6MTYxMTY0ODA1OSwiZXhwIjoxNjQzMTg0MDU5LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.uh4HcSkpDnmpXsBagC0V2HguHtJC7cbODRyPNwRYGRQYMT6pI6Rdocp5TnUUA9IR4TCP6YMLlA5tTR27KvmZt-VdtVSt23-B4ha0NVS2zApUfPBxD739--LMIyvohyVovxhM8uDoDTq8z_3_rerhImLolrLsUnU_xosr7QI6alrwjPKjhrsGI9B8ZCSSpmamzeaW-rSvpsBSML0MijDqawAbb4-jRPDjIuxyoiSS-D04QhOZNpWxhTbwYHR-1xsrCj9dz4uAOUTAUzJeLf7W9l6_tMlos8zgksFrrHUhUA0B6ioZvFI1EX-cKLMZZhqcjSnPZ-Qp_sVgFA8YwwlJeAMk3dcPtMjDJHdkiYVvqgYE2MEAMmpkefeUrZ5Kng_JJ1mAeESN78z0zmKCAbLri7LBf0nymfMKH4euwyYu3VTJaSEaN4BYdfYOyD8EZ340KcPjXN6Djgbud_4VV_TdFp0trxcyTzFEeoXmC1KoOpMURASDk6XqveDcQ7QhMx4F_j1-hHKKj5--7V-lSZmj2XPQ8HhOCbVKiccC0CpL_ZQRO93IGqPXBfEltloQIttuH5QCFjktyp6M4dNYSzcPw-GshkqGxNmQHrqGtWuBII5HkzsWW4wpaW9i8ak89flDBjOjP4PxWrVYem8mMUHlpW1-qged5KiLhw3cDp_Q3Hk",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Metode Penelitian Teknik Informatika",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "password",
+							"value": "maulana",
+							"type": "text",
+							"disabled": true
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/rack",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"rack"
+					],
+					"query": [
+						{
+							"key": "emai",
+							"value": "maulana",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "insert rack",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "OtWi5hzTHAR5Sxy6netxkKqxZQqNjLQg0SekdTYspPravjVQdWLQqh0pG1fY",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "sedang kecil",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "maulana",
+							"type": "text",
+							"disabled": true
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/rack",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"rack"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete rak",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "OtWi5hzTHAR5Sxy6netxkKqxZQqNjLQg0SekdTYspPravjVQdWLQqh0pG1fY",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "id",
+							"value": "2",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "password",
+							"value": "maulana",
+							"type": "text",
+							"disabled": true
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/rack/7",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"rack",
+						"7"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Rak",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "OtWi5hzTHAR5Sxy6netxkKqxZQqNjLQg0SekdTYspPravjVQdWLQqh0pG1fY",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Besar sedang",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "maulana",
+							"type": "text",
+							"disabled": true
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/rack/4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"rack",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "inser books",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "OtWi5hzTHAR5Sxy6netxkKqxZQqNjLQg0SekdTYspPravjVQdWLQqh0pG1fY",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "isbn",
+							"value": "013",
+							"type": "text"
+						},
+						{
+							"key": "title",
+							"value": "Tentang Sastra",
+							"type": "text"
+						},
+						{
+							"key": "author",
+							"value": "Andri",
+							"type": "text"
+						},
+						{
+							"key": "total_page",
+							"value": "70",
+							"type": "text"
+						},
+						{
+							"key": "rack_id",
+							"value": "6",
+							"type": "text"
+						},
+						{
+							"key": "categories",
+							"value": "[4,5]",
+							"type": "text"
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/books",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"books"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "list buku",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiMzUxZTk1OGQwNGMxYWNmMjc5ODJhNzJlYjU5YzQxYjEzNTUyZWU4NGU3ZWI1NGFiNjE0N2RlNzdhNTJlODdiMTRiM2EyMTcxOTRkODQwNWQiLCJpYXQiOjE2MTE2NDgwNTksIm5iZiI6MTYxMTY0ODA1OSwiZXhwIjoxNjQzMTg0MDU5LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.uh4HcSkpDnmpXsBagC0V2HguHtJC7cbODRyPNwRYGRQYMT6pI6Rdocp5TnUUA9IR4TCP6YMLlA5tTR27KvmZt-VdtVSt23-B4ha0NVS2zApUfPBxD739--LMIyvohyVovxhM8uDoDTq8z_3_rerhImLolrLsUnU_xosr7QI6alrwjPKjhrsGI9B8ZCSSpmamzeaW-rSvpsBSML0MijDqawAbb4-jRPDjIuxyoiSS-D04QhOZNpWxhTbwYHR-1xsrCj9dz4uAOUTAUzJeLf7W9l6_tMlos8zgksFrrHUhUA0B6ioZvFI1EX-cKLMZZhqcjSnPZ-Qp_sVgFA8YwwlJeAMk3dcPtMjDJHdkiYVvqgYE2MEAMmpkefeUrZ5Kng_JJ1mAeESN78z0zmKCAbLri7LBf0nymfMKH4euwyYu3VTJaSEaN4BYdfYOyD8EZ340KcPjXN6Djgbud_4VV_TdFp0trxcyTzFEeoXmC1KoOpMURASDk6XqveDcQ7QhMx4F_j1-hHKKj5--7V-lSZmj2XPQ8HhOCbVKiccC0CpL_ZQRO93IGqPXBfEltloQIttuH5QCFjktyp6M4dNYSzcPw-GshkqGxNmQHrqGtWuBII5HkzsWW4wpaW9i8ak89flDBjOjP4PxWrVYem8mMUHlpW1-qged5KiLhw3cDp_Q3Hk",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "isbn",
+							"value": "011",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "title",
+							"value": "Cara Mudah Mengedit Robot",
+							"type": "text"
+						},
+						{
+							"key": "author",
+							"value": "Yusep ",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "total_page",
+							"value": "90",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "rack_id",
+							"value": "4",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "categories",
+							"value": "[2,3]",
+							"type": "text",
+							"disabled": true
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/books?title=Cara Mudah Mengedit Robot",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"books"
+					],
+					"query": [
+						{
+							"key": "title",
+							"value": "Cara Mudah Mengedit Robot"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "forgot pass",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "isbn",
+							"value": "011",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "email",
+							"value": "didin@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "author",
+							"value": "Yusep ",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "total_page",
+							"value": "90",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "rack_id",
+							"value": "4",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "categories",
+							"value": "[2,3]",
+							"type": "text",
+							"disabled": true
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/forgotPassword",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"forgotPassword"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "resetPass",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "token",
+							"value": "CNVMvmHjT9su",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "didin@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "maulanaAksan",
+							"type": "text"
+						},
+						{
+							"key": "confirm",
+							"value": "maulanaAksan",
+							"type": "text"
+						},
+						{
+							"key": "rack_id",
+							"value": "4",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "categories",
+							"value": "[2,3]",
+							"type": "text",
+							"disabled": true
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/resetPass",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"resetPass"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
